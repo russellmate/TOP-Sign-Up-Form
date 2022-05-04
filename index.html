@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+		</style>
+		<title>Sign Up Form</title>
+	</head>
+	<body>
+		<main>
+			<div class="odin-cover">
+				<div class="logo-banner">
+					<img
+						id="odin-logo"
+						src="/images/odin-lined.png"
+						alt="Odin project logo"
+					/>
+				</div>
+				<figcaption class="cover-caption">
+					Photo by Hallie West on Unsplash
+				</figcaption>
+			</div>
+			<div class="right">
+				<p class="description">
+					This is not a real service! Lorem, ipsum dolor sit amet
+					consectetur adipisicing elit. Quis modi rem nisi ratione
+					obcaecati. <br /><br />
+					Sign up <em>now</em> to get started!
+				</p>
+				<div class="account-form">
+					<p id="form-heading">Lets do this!</p>
+					<form id="account-form" action="#" method="post">
+						<div class="element-grid">
+							<div class="form-element">
+								<label class="form-label" for="first-name"
+									>FIRST NAME</label
+								>
+								<input
+									class="form-input"
+									minlength="1"
+									type="text"
+									id="first-name"
+									required
+									name="first-name"
+								/>
+							</div>
+
+							<div class="form-element">
+								<label class="form-label" for="last-name"
+									>LAST NAME</label
+								>
+								<input
+									class="form-input"
+									minlength="1"
+									type="text"
+									id="last-name"
+									required
+									name="last-name"
+								/>
+							</div>
+
+							<div class="form-element">
+								<label class="form-label" for="user-email"
+									>EMAIL ADDRESS</label
+								>
+								<input
+									class="form-input"
+									minlength="5"
+									type="email"
+									id="user-email"
+									required
+									name="user-email"
+								/>
+							</div>
+
+							<div class="form-element">
+								<label class="form-label" for="phone-number"
+									>PHONE NUMBER</label
+								>
+								<input
+									class="form-input"
+									minlength="7"
+									type="tel"
+									id="phone-number"
+									required
+									name="phone-number"
+								/>
+							</div>
+
+							<div class="form-element">
+								<label class="form-label" for="password"
+									>PASSWORD</label
+								>
+								<input
+									class="form-input"
+									minlength="7"
+									maxlength="20"
+									required
+									type="password"
+									id="password"
+									required
+									name="password"
+								/>
+							</div>
+
+							<div class="form-element">
+								<label class="form-label" for="confirm-password"
+									>CONFIRM PASSWORD</label
+								>
+								<input
+									class="form-input"
+									minlength="7"
+									maxlength="20"
+									required
+									type="password"
+									id="confirm-password"
+									requiredd
+									name="confirm-password"
+								/>
+							</div>
+						</div>
+					</form>
+				</div>
+				<button type="submit" id="create-account" form="account-form">
+					Create Account
+				</button>
+				<p class="login-instead">
+					Already have an account?
+					<a href="#"><span id="login">Log in</span></a>
+				</p>
+			</div>
+		</main>
+	</body>
+	<script src="/main.js"></script>
+</html>

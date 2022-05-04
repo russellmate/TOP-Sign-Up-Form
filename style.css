@@ -1,0 +1,137 @@
+:root {
+	--darkGrey: rgba(0, 0, 0, 0.508);
+	--darkGrey2: rgb(65, 65, 65);
+	--lightGrey: rgb(234, 233, 233);
+	--lightGrey2: rgba(167, 167, 167, 0.751);
+	--offWhite: rgba(255, 254, 248, 0.718);
+	--white: white;
+	--green: rgb(51, 91, 41);
+	--red: rgb(169, 30, 30);
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: var(--darkGrey);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: grid;
+	grid-template-columns: 1.2fr 2fr;
+	max-width: 1024px;
+}
+
+.odin-cover {
+	background: url(/images/halie-west-25xggax4bSA-unsplash.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: -15rem;
+	background-color: var(--darkGrey);
+	padding: 1rem;
+}
+
+#odin-logo {
+	width: 5rem;
+}
+
+.cover-caption {
+	color: var(--white);
+	font-size: 0.8rem;
+	position: absolute;
+	bottom: 1rem;
+}
+
+.right {
+	padding: 6rem 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: var(--lightGrey);
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+.description {
+	margin-bottom: 3rem;
+}
+
+.account-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--white);
+	margin: 1rem -3rem;
+	padding: 1rem 3rem;
+	padding-bottom: 2rem;
+	width: 100%;
+	box-shadow: var(--lightGrey2) 0px 3px 8px;
+}
+
+.element-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.2rem 4rem;
+}
+
+.form-element {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem auto;
+}
+
+.form-label {
+	color: var(--darkGrey2);
+}
+
+.form-input {
+	border-radius: 0.2rem;
+	padding: 0.2rem;
+	border-style: solid;
+	background-color: var(--offWhite);
+}
+
+.invalid-form-input {
+	border-color: var(--red);
+}
+
+#create-account {
+	margin-top: 1rem;
+	border-radius: 0.5rem;
+	border-style: solid;
+	padding: 0.6rem 1.8rem;
+	font-size: 1rem;
+	color: var(--white);
+	background-color: var(--green);
+	cursor: pointer;
+}
+
+.login-instead {
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+#login {
+	color: var(--green);
+	cursor: pointer;
+}
